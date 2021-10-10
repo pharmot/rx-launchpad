@@ -1,0 +1,235 @@
+*,*:after,*:before {  box-sizing: border-box;  color: #4d525a;}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  font-family: Montserrat, "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 11pt;
+  justify-content: center;
+  margin: 0.5rem;
+  margin-top: 0;
+}
+.col {
+  display: inline-flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: calc(12rem + 2px);
+  min-width: calc(12rem + 2px);
+  max-width: calc(12rem + 2px);
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
+}
+.left-bar {
+  width: 54px;
+  min-width: 54px;
+  max-width: 54px;
+  padding-top: 28px;
+}
+button.toggle {
+  font: unset;
+  padding: unset;
+  border-width: unset;
+  border-style: unset;
+  border-radius: unset;
+  border-color: unset;
+  border-image: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  color: #4d525a;
+  text-decoration: none;
+  width: 12rem;
+  min-width: 12rem;
+  max-width: 12rem;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+button.toggle.disabled {
+  box-shadow: none;
+  font-weight: 600;
+  cursor: default;
+  border: 1px rgba(0, 0, 0, 0.3) solid;
+}
+button.toggle:hover {
+  background: #f2a900;
+  color: #000;
+}
+button.toggle.disabled:hover {
+  background: #fff;
+  color: #4d525a;
+}
+button.toggle:hover small {
+  color: #fff;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin: 1px;
+  width: 12rem;
+  min-width: 12rem;
+  max-width: 12rem;
+  transition: all 0.15s ease-in-out;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.btn small {
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.container h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  min-width: 12rem;
+  max-width: 12rem;
+  font-weight: 600;
+  font-style: normal;
+  font-variant: normal;
+  vertical-align: baseline;
+  text-decoration: none;
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 0;
+  font-size: 14pt;
+  color: #4d525a;
+}
+.container h3.h5 {
+  font-size: 11pt;
+  margin: 11pt 0 0 0;
+  line-height: 1.25;
+}
+.btn:hover {  background: #f2a900;  color: #000;}
+.btn:hover small {  color: #000;}
+.di {  background: #15c;}
+.rxlink {  background: #55a63a;}
+.fhs {  background: #007a6b;}
+.rx {  background: #477f3b;}
+.chi {  background: #2fa9b7;}
+.link {  background: #004546;}
+.calc {  background: #5a518c;}
+.calc2 {  background: #7c6fb3;}
+.red {  background: #ba162a;}
+.csh {  background: #ba4896;}
+.covid {  background: #dd5737;}
+.covid-ext {  background: #953309;}
+.file {  background: #bfc1c4;  color: #000;}
+.white {  background: #fff;  color: #000;}
+.redborder {  border: 1px solid #ba162a;}
+.tech-only {  display: none;}
+
+.size--2 {
+  font-size: 1.1em;
+  font-weight: 600;
+  line-height: 1.1rem;
+}
+.width--half {
+  width: calc(12rem / 2 - 1px);
+  max-width: calc(12rem / 2 - 1px);
+  min-width: calc(12rem / 2 - 1px);
+}
+.width--half.size--2 + .width--half {
+  line-height: 1.1rem;
+}
+
+.btn--gw,
+.btn--g {
+  margin: 1px;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.btn--g:hover
+.btn--gw:hover {
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
+  border-color: #aaa;
+}
+
+.gw {
+  object-fit: none;
+  object-position: 0 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+#gw-mail {  object-position: -58px 0px;}
+#gw-cal {  object-position: -120px 0px;}
+#gw-drive {  object-position: -184px 0px;}
+#gw-docs {  object-position: 5px -74px;}
+#gw-sheets {  object-position: -58px -74px;}
+#gw-slides {  object-position: -120px -74px;}
+#gw-sites { object-position: -185px -74px;}
+#gw-keep { object-position: -310px -74px;}
+#gw-chat {  object-position: -154px -145px;}
+
+#changeTo-rph { margin-top: 56px;}
+
+.g {
+  object-fit: none;
+  object-position: 0 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+}
+#g-assistant {    object-position: 0 0;}
+#g-shopping {     object-position: 0 -69px;}
+#g-idk6 {         object-position: 0 -138px;}
+#g-play {         object-position: 0 -207px;}
+#g-keep {         object-position: 0 -276px;}
+#g-finance {      object-position: 0 -345px;}
+#g-ads {          object-position: 0 -414px;}
+#g-maps {         object-position: 0 -483px;}
+#g-podcasts {     object-position: 0 -552px;}
+#g-collections {  object-position: 0 -621px;}
+#g-meet {         object-position: 0 -690px;}
+#g-idk5 {         object-position: 0 -759px;}
+#g-stadia {       object-position: 0 -828px;}
+#g-groups {       object-position: 0 -897px;}
+#g-classroom {    object-position: 0 -966px;}
+#g-admin {        object-position: 0 -1035px;}
+#g-sites {        object-position: 0 -1104px;}
+#g-idk4 {         object-position: 0 -1173px;}
+#g-docs {         object-position: 0 -1242px;}
+#g-news {         object-position: 0 -1311px;}
+#g-earth {        object-position: 0 -1380px;}
+#g-cloudsearch {  object-position: 0 -1449px;}
+#g-idk3 {         object-position: 0 -1518px;}
+#g-account {      object-position: 0 -1587px;}
+#g-chat {         object-position: 0 -1656px;}
+#g-idk2 {         object-position: 0 -1725px;}
+#g-search {       object-position: 0 -1794px;}
+#g-blogger {      object-position: 0 -1863px;}
+#g-translate {    object-position: 0 -1932px;}
+#g-mail {         object-position: 0 -2001px;}
+#g-jamboard {     object-position: 0 -2070px;}
+#g-forms {        object-position: 0 -2139px;}
+#g-sheets {       object-position: 0 -2208px;}
+#g-slides {       object-position: 0 -2277px;}
+#g-chrome {       object-position: 0 -2346px;}
+#g-hangouts {     object-position: 0 -2415px;}
+#g-duo {          object-position: 0 -2484px;}
+#g-calendar {     object-position: 0 -2553px;}
+#g-youtube {      object-position: 0 -2622px;}
+#g-one {          object-position: 0 -2691px;}
+#g-idk1 {         object-position: 0 -2760px;}
+#g-photos {       object-position: 0 -2829px;}
+#g-contacts {     object-position: 0 -2898px;}
+#g-drive {        object-position: 0 -2967px;}
+#g-travel {       object-position: 0 -3036px;}
