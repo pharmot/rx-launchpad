@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+  <link rel="manifest" href="favicon\site.webmanifest">
+  <title>Launchpad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="launchpad.css">
+</head>
+<body>
+  <div class="container">
+    <div class="col left-bar">
+      <a class="btn--gw" href="https://mail.commonspirit.org/" title="Commonspirit Email"><img class="gw" id="gw-mail" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://chat.google.com/" title="Google Chat"><img class="gw" id="gw-chat" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://drive.google.com/" title="Google Drive"><img class="gw" id="gw-drive" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://calendar.google.com/" title="Google Calendar"><img class="gw" id="gw-cal" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://docs.google.com/" title="Google Docs"><img class="gw" id="gw-docs" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://sheets.google.com/" title="Google Sheets"><img class="gw" id="gw-sheets" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://slides.google.com/" title="Google Slides"><img class="gw" id="gw-slides" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://sites.google.com/new" title="Google Sites"><img class="gw" id="gw-sites" src="google-workspace-icons.png"></a>
+      <a class="btn--gw" href="https://keep.google.com/" title="Google Keep"><img class="gw" id="gw-keep" src="google-workspace-icons.png"></a>
+    </div>
+    <div class="col links">
+      <h3>Drug Info</h3>
+      <a class="btn di" href="http://online.lexi.com/">Lexicomp</a>
+      <a class="btn di" href="https://www.uptodate.com/contents/search">UpToDate</a>
+      <a class="btn di" href="http://www.clinicalkey.com/pharmacology/">Clinical Pharm</a>
+      <a class="btn di" href="https://www.clinicalkey.com/#!/browse/book/3-s2.0-C20170030628">IV Medications <small> (book)</small></a>
+      <a class="btn di" href="https://hospital-pharmacist.therapeuticresearch.com/Home/PLH">Pharmacists Letter</a>
+      <a class="btn di" href="https://accessmedicine.mhmedical.com/">Access Medicine</a>
+      <a class="btn di" href="http://www.naturalstandard.com/">Natural Medicines</a>
+      <h3>Rx Links</h3><a class="btn rxlink" href="http://chifranciscan.medspeed.com/">MedSpeed</a>
+      <a class="btn rxlink" href="https://chi.pharmacykeeper.com/pharmacykeeper/oktalogin/sah">PharmacyKeeper</a>
+      <a class="btn rxlink size--2 width--half" href="https://theradoc.premierinc.com/theradoc">Theradoc</a>
+      <a class="btn rxlink size--2 width--half" href="https://r5pyxis.chi.catholichealth.net/">Pyxis</a>
+      <a class="btn rxlink rph-only" title="Data prior to migration to national instance 10/2020" href="https://theradoc-csh-fhstac.premierinc.com/theradoc">Theradoc Historic Data</a>
+      <a class="btn rxlink rph-only size--2" href="https://www.capsordersonline.com">CAPS</a>
+      <a class="btn rxlink size--2 width--half" href="https://horizon.kindred.com/portal/webclient/index.html">Kindred</a>
+      <a class="btn rxlink width--half" title="Reset your Kindred password" href="https://www.kindredhealthcare.com/employees/customer-support">Password</a>
+      <a class="btn rxlink rph-only" title="Glucommander downtime site" href="https://franciscan.glytecenterprise.com/patients/current">Glucommander</a>
+      <a class="btn rxlink width--half" href="http://app.mogulwireless.com/groups/406">Mogul</a>
+      <a class="btn rxlink width--half" href="http://www.smart-temps.com/web/login.cfm">SmartTemps</a>
+      <button class="toggle changeView white disabled" id="changeTo-rph">Pharmacist View</button>
+      <button class="toggle changeView white" id="changeTo-tech">Technician View</button>
+    </div>
+    <div class="col links">
+      <h3>VMFH</h3>
+      <a class="btn fhs size--2" href="https://chifh.catholichealth.net/">VMFH Connect</a>
+      <a class="btn fhs rph-only size--2 width--half" href="https://fcconline.catholichealth.net/webxchange/Default.aspx">FCC</a>
+      <a class="btn fhs size--2 width--half tech--full" href="http://chifranciscan-stanthony.policystat.com/?lt=oyo9UjxFEl07Liwra_Cx4V">PolicyStat</a>
+      <a class="btn fhs rph-only" href="https://chifh.catholichealth.net/Comm/ma/Documents/Forms/AllItems.aspx?RootFolder=%2FComm%2Fma%2FDocuments%2FFHS%20Medical%20Staff%20Rosters&FolderCTID=0x012000C8B2347621EA8744B6F5005BDB63B9EC&View=%7BFB4D66AD%2D9F73%2D4671%2DA11E%2D6298C41F1788%7D">FHS Provider Rosters</a>
+      <a class="btn fhs rph-only" href="https://chifh.catholichealth.net/Comm/fit/Lists/FitPictures/AllItems.aspx">FIT Providers</a>
+      <a class="btn fhs rph-only" href="https://www.chifranciscan.org/for-medical-staff/provider-orders.html">Provider Orders</a>
+      <a class="btn fhs width--half tech--full" href="https://live.origamirisk.com/Origami/IncidentEntry/Direct?token=0qWqvfkh0fZMB46dXqp0d4p4dO7nHMATyYpkseMyzUXKU5mn1rViHBMIVejRfAzxQk0ximH98aSK6tdLmE1g0EAyHuGfKpsncD5%2B7zPafgTVUmgV1Ti29ckYVnOn9Fmv">IRIS</a>
+      <a class="btn fhs rph-only width--half" href="https://chifh.catholichealth.net/Comm/Sepsis/Pages/default.aspx">Sepsis</a>
+      <a class="btn fhs" href="https://chifh.catholichealth.net/comm/hmm/Pages/default.aspx">Hazardous MM</a>
+      <a class="btn fhs" href="https://chifh.catholichealth.net/Comm/hmm/Documents/Safe%20Handling%20of%20HD%20Table%2012_30_19.pdf">Safe Handling Table</a>
+      <a class="btn fhs" href="https://mc.woa.chifranciscan.org/home">Mission Control</a>
+      <a class="btn covid" href="https://chifh.catholichealth.net/COVID">COVID (VMFH)</a>
+      <h3>VMFH Pharmacy</h3>
+      <a class="btn rx size--2" href="https://chifh.catholichealth.net/comm/phs">VMFH Pharmacy</a>
+      <a class="btn rx size--2" href="https://chifh.catholichealth.net/comm/phs/secured/Pages/home.aspx">Secure Rx Portal</a>
+      <a class="btn rx rph-only" href="https://chifh.catholichealth.net/Comm/phs/secured/_layouts/15/osssearchresults.aspx?u=https%3A%2F%2Fchifh%2Ecatholichealth%2Enet%2FComm%2Fphs%2Fsecured&k=%22manager%20approval%20medication%20list%22">Mgr Approval Med List</a>
+      <a class="btn rx rph-only" title="Replaced by new orderset in Epic - this link for downtime use only" href="http://nwtac1web11/CHIFH-Rx/Heparin1.asp">Downtime Heparin Calc</a>
+      <a class="btn rx rph-only width--half" title="VMFH Anticoagulation Services Sharepoint Site" href="https://chifh.catholichealth.net/Comm/actherapy/Pages/default.aspx">Anticoag</a>
+      <a class="btn rx rph-only width--half" title="VMFH Antimicrobial Stewardship Sharepoint Site" href="https://chifh.catholichealth.net/Comm/phs/Pages/Antimicrobial-Stewardship.aspx">AMS</a>
+      <a class="btn calc2 rph-only" href="https://drive.google.com/file/d/1jFfC4BofGKeMhmedE32WWvNNVxwKZQM8/view?usp=sharing">Vanco Protocol</a>
+      <a class="btn rx rph-only" title="VMFH Glycemic Control Sharepoint Site" href="https://chifh.catholichealth.net/Comm/phs/Pages/glycon.aspx">Glycemic Control</a>
+      <a class="btn rx width--half tech--full" href="https://chifh.catholichealth.net/comm/phs/Pages/default.aspx?RootFolder=%2FComm%2Fphs%2FDocuments%2FTherapeutic%20Interchanges%20Formulary">TI List</a>
+      <a class="btn rx width--half tech--full" href="https://docs.google.com/spreadsheets/d/1RK_R-ZCSZsIYqkArHJpiqnBXqYC70aVG/edit?usp=sharing&ouid=100141182843719983131&rtpof=true&sd=true">CSP Dating</a>
+      <a class="btn covid" href="https://drive.google.com/drive/folders/1qLg3qmJIwB3p68DL98OxvAIpPt1DQ5kp?usp=sharing">Treatment Guidance</a>
+      <a class="btn covid" title="Pharmacy Practice Updates" href="https://drive.google.com/drive/folders/1bPn4TyXFv68EbwSrorfKrW-TL-Z7roNG?usp=sharing">Pharmacy Updates</a>
+    </div>
+    <div class="col links">
+      <h3>CommonSpirit</h3>
+      <a class="btn csh" title="CommonSpirit National Clinical Enterprise - Pharmacy" href="https://clb.catholichealth.net/cs/nce/phar/default.aspx">CSH Pharmacy</a>
+      <a class="btn csh" title="CommonSprit ITD Help Desk" href="https://sm.commonspirit.org/ITDhelp?id=csh_home">CSH IT Support</a>
+      <a class="btn csh" href="https://home.commonspirit.org/employeecentral/pathways/chi">Pathways</a>
+      <a class="btn csh" href="https://home.catholichealth.net/hr/home">Employee Central</a>
+      <a class="btn csh" title="Emergency Communications" href="http://commonspirit.xmatters.com/">xMatters</a>
+      <a class="btn chi" href="http://mychiwebapps.catholichealth.net/">My CHI Web Apps</a>
+      <a class="btn chi" href="https://bcaweb.catholichealth.net/BCAWeb">Epic BCA Web Access</a>
+      <a class="btn chi" href="https://clb.catholichealth.net/cs/nce/ca/Pages/AP.aspx">Analytic Portal</a>
+      <a class="btn chi" href="https://commonspirit.zoom.us/">Zoom</a>
+      <a class="btn covid" href="https://clb.catholichealth.net/cs/PS/COVID/Pages/default.aspx">COVID (CHI)</a>
+      <h3>Calculators</h3>
+      <a class="btn calc rph-only size--2" href="http://pharmot.github.io/multipurpose-calculator">Multipurpose Calc</a>
+      <a class="btn calc rph-only width--half" href="glucommanderCustom.html">GM</a>
+      <a class="btn calc rph-only width--half" href="pcaCalc.html">PCA</a>
+      <a class="btn calc width--half tech--full" href="oncalliv.html">On-Call</a>
+      <a class="btn calc rph-only width--half" href="warfarinWeeklyDose.html">Warfarin</a>
+      <a class="btn calc" href="covidvax.html">COVID Vaccine Diltuion</a><a class="btn calc2" href="standardTimes.html">Standard Admin Times</a>
+      <a class="btn calc rph-only" href="reverseHeparin.html"><small>Reverse Heparin Calculator</small></a><a class="btn calc" href="slidingScaleText.html">SSI Admin Inst.</a>
+      <a class="btn calc rph-only" href="kcentra.html">KCentra Lot/Exp</a>
+      <a class="btn calc" href="tpnVolume.html">TPN Volume</a>
+      <a class="btn calc rph-only" href="afibScoring.html">A-Fib Scoring</a>
+      <a class="btn calc rph-only" href="alligBasic.html">Alligation (Basic)</a>
+      <a class="btn calc rph-only" href="alligDouble.html">Alligation (Double)</a>
+    </div>
+    <div class="col links">
+      <h3>External Links</h3>
+      <a class="btn link" href="https://medhx.drfirst.com/">DrFirst MedHx</a>
+      <a class="btn link" href="https://secureaccess.wa.gov/myAccess/saw/select.do">Secure Access WA</a>
+      <a class="btn link rph-only" href="http://www.clozapinerems.com/">Clozapine REMS</a>
+      <a class="btn link" href="https://galaxy.epic.com/?#Home/">Epic Galaxy</a>
+      <a class="btn link" href="https://dailymed.nlm.nih.gov/">Daily Med</a>
+      <a class="btn link rph-only" href="https://clincalc.com/Vancomycin/">ClinCalc-Vanco</a>
+      <a class="btn link" href="https://www.doh.wa.gov/LicensesPermitsandCertificates/ProfessionsNewReneworUpdate/PharmacyCommission">WA PQAC</a>
+      <a class="btn link width--half" href="http://www.deadiversion.usdoj.gov/index.html">DEA</a>
+      <a class="btn link width--half" href="http://www.ashp.org/menu/DrugShortages/NoPresentations">Shortages</a>
+      <a class="btn link rph-only width--half" href="https://livertox.nlm.nih.gov/">Livertox</a>
+      <a class="btn link rph-only width--half" href="http://www.mdcalc.com/">MD Calc</a>
+      <a class="btn link rph-only width--half" href="http://www.globalrph.com/pharmacokinetics2012.htm">Global RPh</a>
+      <a class="btn link rph-only width--half" href="http://www.nabp.net/programs/cpe-monitor/cpe-monitor-service/cpe-monitor-log-in">NABP/CPE</a>
+      <a class="btn link rph-only" href="https://www.hep-druginteractions.org/">Hepatitis DDIs</a>
+      <a class="btn link rph-only" href="https://clinicalinfo.hiv.gov/sites/default/files/guidelines/documents/AA_Tables.pdf">HIV Guidelines</a>
+      <a class="btn link" href="https://www.ismp.org/recommendations/tall-man-letters-list">Tall Man Lettering</a>
+      <a class="btn link" href="https://www.ismp.org/recommendations/do-not-crush">Do Not Crush</a>
+      <a class="btn link" href="https://www.cdc.gov/vaccines/hcp/vis/current-vis.html">Vaccine Info Statements</a>
+      <a class="btn link rph-only" title="Seattle Children's Clinical Standard Work Pathways and Tools" href="https://www.seattlechildrens.org/healthcare-professionals/gateway/clinical-resources/pathways/">Peds Pathways</a>
+      <h3 class="h5">COVID-19 (external)</h3>
+      <a class="btn covid-ext" href="https://www.doh.wa.gov/LicensesPermitsandCertificates/ProfessionsNewReneworUpdate/PharmacyCommission/WhatsNew">PQAC</a>
+      <a class="btn covid-ext" href="https://www.doh.wa.gov/Emergencies/Coronavirus">WA DOH</a>
+      <a class="btn covid-ext" href="http://www.coronavirus.wa.gov/">WA State</a>
+      <a class="btn covid-ext" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html">CDC</a>
+      <a class="btn covid-ext" href="https://coronavirus.jhu.edu/map.html">Johns Hopkins Map</a>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='launchpad.js'></script>
+</body>
+</html>
